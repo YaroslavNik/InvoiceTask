@@ -35,11 +35,10 @@ export default function App() {
                 }
             })
     }
-    //<Form submitHandler = {submitHandler} onChangeHandler = {onChangeHandler} user = {user}/>
     return (
         <div className = 'container'>
             <Sidebar user = {user} img = {img} onChangeHandler = {onChangeHandler} submitHandler = {submitHandler}/>
-
+            <Form submitHandler = {submitHandler} onChangeHandler = {onChangeHandler} user = {user}/>
         </div>
 
     )
