@@ -1,0 +1,60 @@
+.sidebar
+    position: fixed
+    left: 0
+    top: 0
+    max-width: 300px
+    background-color: #787575fb
+    height: 100%
+    color: white
+
+    .dropdown
+        position: absolute
+        top: 10px
+        left: 10px
+        height: 30px
+        width: 35px
+        display: flex
+        flex-flow: column
+        justify-content: space-between
+
+        &:hover
+            cursor: pointer
+            opacity: 0.6
+
+        span
+            width: 35px
+            height: 6px
+            background-color: black
+    
+    &-header 
+        display: flex
+        justify-content: center
+        flex-flow: column
+        align-items: center
+
+    &-img
+        margin-top: 60px
+        width: 150px
+        height: 150px
+        border-radius: 50%
+
+    &-content
+        width: 0
+        overflow: hidden
+        display: flex
+        flex-flow: column
+        height: 100%
+        padding: 0
+        box-sizing: content-box
+        justify-content: space-between
+        transition: all ease 0.4s
+    
+    .active
+        width: 300px
+        transition: all ease 0.4s
+
+    &-footer
+        margin-bottom: 1em
+        text-align: center
+        padding: 0 1em
+        white-space: nowrap
